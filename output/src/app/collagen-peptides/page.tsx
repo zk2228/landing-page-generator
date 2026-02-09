@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 /* ───────────────────────────── data ───────────────────────────── */
 
@@ -116,6 +116,20 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 /* ───────────────────────────── page ───────────────────────────── */
 
 export default function CollagenPeptidesPage() {
+  const buyBoxRef = useRef<HTMLElement>(null);
+  const [showStickyBar, setShowStickyBar] = useState(false);
+
+  useEffect(() => {
+    const el = buyBoxRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setShowStickyBar(!entry.isIntersecting),
+      { threshold: 0 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="min-h-screen">
       {/* ─── 1. PROMO BAR ─── */}
@@ -141,16 +155,17 @@ export default function CollagenPeptidesPage() {
       {/* ─── 2. HERO / BUY BOX ─── */}
       <section
         id="buy"
+        ref={buyBoxRef}
         className="bg-gradient-to-br from-brand-dark-teal to-[#3A5F62] text-white"
       >
         <div className="max-w-6xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
-          {/* Product image placeholder */}
+          {/* Product image */}
           <div className="flex items-center justify-center">
-            <div className="w-72 h-80 md:w-80 md:h-96 rounded-2xl bg-white/10 border border-white/20 flex flex-col items-center justify-center text-center p-8">
-              <span className="text-6xl mb-4">🫙</span>
-              <p className="text-brand-aqua font-display text-xl">Multi Collagen Peptides</p>
-              <p className="text-white/60 text-sm mt-2">16 oz · Unflavored</p>
-            </div>
+            <img
+              src="/Revitalize-Me-product-render_front-back.jpg"
+              alt="RevitalizeMe Multi Collagen Peptides - Front and Back"
+              className="w-full max-w-md rounded-2xl shadow-2xl shadow-black/30 object-contain"
+            />
           </div>
 
           {/* Buy box */}
@@ -538,6 +553,28 @@ export default function CollagenPeptidesPage() {
           </p>
         </div>
       </section>
+
+      {/* ─── STICKY ADD TO CART BAR ─── */}
+      <div
+        className={`fixed bottom-0 left-0 right-0 z-50 bg-brand-dark-teal border-t border-white/10 shadow-[0_-4px_20px_rgba(0,0,0,0.3)] transition-transform duration-300 ${
+          showStickyBar ? "translate-y-0" : "translate-y-full"
+        }`}
+      >
+        <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between gap-4">
+          <div className="flex items-center gap-3 min-w-0">
+            <span className="text-white font-semibold text-sm sm:text-base truncate">
+              Multi Collagen Peptides
+            </span>
+            <span className="text-brand-aqua font-bold text-lg shrink-0">$39.99</span>
+          </div>
+          <a
+            href="#buy"
+            className="shrink-0 bg-brand-aqua text-brand-dark-teal font-bold text-sm sm:text-base px-6 py-2.5 rounded-lg hover:brightness-90 transition"
+          >
+            Add to Cart
+          </a>
+        </div>
+      </div>
 
       {/* ─── 13. FOOTER ─── */}
       <footer className="bg-brand-dark-teal text-white">
