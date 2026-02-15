@@ -138,14 +138,14 @@ export default function PerimenopauseThankYouPage() {
                 href="/glp1-decision-matrix"
                 className="block w-full text-center border border-gray-200 rounded-lg py-3 px-4 text-sm text-[#294547] hover:border-[#81D9DE] hover:bg-[#F0F9FA] transition-all"
               >
-                Interested in weight management too? Get the GLP-1 Decision
+                Dealing with weight changes too? Get the GLP-1 Decision
                 Matrix &rarr;
               </a>
               <a
                 href="/should-you-wait-retatrutide"
                 className="block w-full text-center border border-gray-200 rounded-lg py-3 px-4 text-sm text-[#294547] hover:border-[#81D9DE] hover:bg-[#F0F9FA] transition-all"
               >
-                Considering medication? Should You Wait for Retatrutide? &rarr;
+                Considering medication options? Should You Wait for Retatrutide? &rarr;
               </a>
             </div>
           </div>
@@ -160,8 +160,9 @@ export default function PerimenopauseThankYouPage() {
             </a>
             <p className="text-xs text-[#666666]/80 leading-relaxed max-w-xl mx-auto">
               This content is for educational purposes only and is not intended
-              as medical advice. Always consult with a qualified healthcare
-              provider before starting any treatment.
+              as medical advice. Information reflects research available as of
+              February 2026. Always consult with a qualified healthcare
+              provider before starting any treatment. Individual results may vary.
             </p>
           </footer>
         </div>
