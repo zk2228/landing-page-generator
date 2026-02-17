@@ -76,7 +76,7 @@ export default function LibidoGuide() {
 
           {/* Byline */}
           <p style={{ color: "#6b7280", fontSize: "0.95rem", marginBottom: "32px" }}>
-            By Dr. Cyrus, MD &bull; February 2026 &bull; 13 min read
+            By The RevitalizeMe Clinical Team &bull; February 2026 &bull; 13 min read
           </p>
 
           {/* Opening */}

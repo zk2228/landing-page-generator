@@ -33,7 +33,7 @@ export default function RetatrutideFattyLiverPage() {
 
           {/* Byline */}
           <p className="text-center text-[#666666] text-sm mb-8">
-            By Dr. Cyrus, MD &bull; February 2026 &bull; 9 min read
+            By The RevitalizeMe Clinical Team &bull; February 2026 &bull; 9 min read
           </p>
 
           {/* Opening */}

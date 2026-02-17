@@ -42,7 +42,7 @@ export default function HormonalAnxietyGuidePage() {
 
           {/* Byline */}
           <p className="text-center text-[#666666] text-sm mb-8">
-            By Dr. Cyrus, MD &bull; February 2026 &bull; 12 min read
+            By The RevitalizeMe Clinical Team &bull; February 2026 &bull; 12 min read
           </p>
 
           {/* Opening */}

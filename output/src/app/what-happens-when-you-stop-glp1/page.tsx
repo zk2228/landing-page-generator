@@ -33,7 +33,7 @@ export default function WhatHappensWhenYouStopGLP1Page() {
 
           {/* Byline */}
           <p className="text-center text-[#666666] text-sm mb-8">
-            By Dr. Cyrus, MD &bull; February 2026 &bull; 10 min read
+            By The RevitalizeMe Clinical Team &bull; February 2026 &bull; 10 min read
           </p>
 
           {/* Opening */}
