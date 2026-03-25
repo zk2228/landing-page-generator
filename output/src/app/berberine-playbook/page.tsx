@@ -334,7 +334,7 @@ export default function BerberinePlaybook() {
           {/* ====== MID-ARTICLE EMAIL CAPTURE (Primary Conversion) ====== */}
           <div className="w-full bg-[#F0F9FA] rounded-xl p-6 sm:p-8 mb-10">
             <h2 className="font-display text-xl sm:text-2xl text-[#294547] text-center mb-3">
-              Get the Complete Berberine Playbook — Free
+              Get the Complete Berberine Guide — Free
             </h2>
             <p className="text-center text-[#666666] text-sm sm:text-base mb-6 max-w-lg mx-auto">
               10 pages of evidence-based guidance on berberine, metabolic health, and the 3-ingredient stack — including the full comparison table, interaction warnings, and research citations. Written by our medical team, not a marketing department.
@@ -342,7 +342,7 @@ export default function BerberinePlaybook() {
             <form action="https://api.web3forms.com/submit" method="POST" className="w-full flex flex-col gap-3 max-w-md mx-auto">
               <input type="hidden" name="access_key" value="2e69ed75-e2a2-4eed-97c6-b1ace9d49897" />
               <input type="hidden" name="redirect" value="https://landing-page-generator-gamma.vercel.app/berberine-playbook/thank-you" />
-              <input type="hidden" name="subject" value="New Lead: Berberine Playbook Download" />
+              <input type="hidden" name="subject" value="New Lead: Berberine Guide Download" />
               <input type="hidden" name="from_name" value="RevitalizeMe Lead Magnet" />
               <input type="checkbox" name="botcheck" className="hidden" />
 
@@ -363,7 +363,7 @@ export default function BerberinePlaybook() {
                 type="submit"
                 className="w-full bg-[#294547] text-white font-semibold text-base sm:text-lg py-3.5 rounded-lg hover:bg-[#3A5F62] transition-all cursor-pointer"
               >
-                Send Me the Playbook &rarr;
+                Send Me the Guide &rarr;
               </button>
             </form>
             <p className="text-center text-sm text-[#666666] mt-3">

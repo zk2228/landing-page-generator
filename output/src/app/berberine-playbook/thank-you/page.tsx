@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Your Guide Is Ready | RevitalizeMe",
   description:
-    "Download The Berberine Playbook — what the research actually says about berberine, AMPK activation, and metabolic health. Free evidence-based guide from RevitalizeMe's medical team.",
+    "Download our free berberine guide — AMPK activation, metabolic health, and the 3-ingredient stack explained. Evidence-based, from RevitalizeMe's medical team.",
   openGraph: {
     title: "Your Guide Is Ready | RevitalizeMe",
     description:
-      "Download The Berberine Playbook — evidence-based, provider-reviewed.",
+      "Download our free berberine guide — evidence-based, provider-reviewed.",
     type: "website",
   },
 };
@@ -51,13 +51,13 @@ export default function BerberinePlaybookThankYouPage() {
 
         {/* Subheadline */}
         <p className="text-center text-brand-text-gray text-base sm:text-lg leading-relaxed mb-8 max-w-[480px]">
-          Click below to download The Berberine Playbook. We&rsquo;ve also
+          Click below to download Berberine: What the Research Actually Says. We&rsquo;ve also
           sent a copy to your email.
         </p>
 
         {/* Download Button */}
         <a
-          href="/revitalizeme-berberine-playbook.pdf"
+          href="/revitalizeme-berberine-guide.pdf"
           download
           className="w-full text-center bg-brand-dark-teal text-white font-semibold text-base sm:text-lg py-3.5 rounded-lg hover:brightness-125 transition-all inline-block mb-10"
         >
